@@ -1,0 +1,23 @@
+{
+  "name": "Fiverr Styles",
+  "component": true,
+  "license_url": null,
+  "about_url": null,
+  "authors": null,
+  "theme_version": null,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+    "FiverrGlyphs-eot": "assets/FiverrGlyphs-eot.eot",
+    "FiverrGlyphs-ttf": "assets/FiverrGlyphs-ttf.ttf",
+    "FiverrGlyphs-woff": "assets/FiverrGlyphs-woff.woff",
+    "Pluto-eot": "assets/Pluto-eot.eot",
+    "Pluto-ttf": "assets/Pluto-ttf.ttf",
+    "Pluto-woff": "assets/Pluto-woff.woff"
+  },
+  "color_schemes": {
+  },
+  "modifiers": {
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}

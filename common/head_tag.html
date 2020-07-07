@@ -1,0 +1,75 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118985222-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118985222-1');
+</script>
+<script>
+$(window).scroll(function() {
+ 
+    if ($(this).scrollTop() > 120)
+     {
+        $('.crunchify-container').fadeOut();
+     }
+    else
+     {
+      $('.crunchify-container').fadeIn();
+     }
+ });
+</script>
+
+<!--<script type="text/discourse-plugin" version="0.6">-->
+<!--    const User = api.container.lookupFactory('model:user');-->
+
+<!--    api.registerConnectorClass('user-profile-primary', 'site-link', {-->
+<!--      setupComponent(args, component) {-->
+<!--        component.set('siteLink', args.model.get('siteLink'));-->
+<!--      }-->
+<!--    });-->
+    
+<!--    api.registerConnectorClass('user-card-metadata', 'site-link', {-->
+<!--      setupComponent(args, component) {-->
+<!--        component.set('siteLink', args.user.get('siteLink'));-->
+<!--      }-->
+<!--    });-->
+    
+<!--    if (User) {-->
+<!--        User.reopen({-->
+<!--            siteLink: function() {-->
+<!--                const username = this.get('username');-->
+                
+<!--                if (username) {-->
+<!--                    const url = `http://fiverr.com/${username}`;-->
+<!--                    const link = `<a href=${url} target='_blank'>${url}</a>`;-->
+                    
+<!--                    return Ember.Object.create({ link, name: "User Profile" });-->
+<!--                } else {-->
+<!--                    return null;-->
+<!--                }-->
+<!--            }.property('username')            -->
+<!--        });-->
+<!--    }-->
+<!--</script>-->
+
+<!--<script type='text/x-handlebars' data-template-name='/connectors/user-profile-primary/site-link'>-->
+<!--  {{#if siteLink}}-->
+<!--    <div class="public-user-fields">-->
+<!--      <div class="public-user-field">-->
+<!--        <span class="user-field-name">{{siteLink.name}}</span>:-->
+<!--        <span class="user-field-value">{{{siteLink.link}}}</span>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  {{/if}}-->
+<!--</script>-->
+
+<!--<script type='text/x-handlebars' data-template-name='/connectors/user-card-metadata/site-link'>-->
+<!--  {{#if siteLink}}-->
+<!--    <h3 class="user-card-public-field">-->
+<!--      <span class="user-field-name">{{siteLink.name}}</span>:-->
+<!--      <span class="user-field-value">{{{siteLink.link}}}</span>-->
+<!--    </h3>-->
+<!--  {{/if}}-->
+<!--</script>-->
