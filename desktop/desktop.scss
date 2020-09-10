@@ -110,7 +110,16 @@ font-display:auto;font-style:normal;font-weight:400;
 .tk-proxima-nova-condensed { font-family: "proxima-nova-condensed",sans-serif; }
 .tk-proxima-nova-extra-condensed { font-family: "proxima-nova-extra-condensed",sans-serif; }
 
-.ficon, #site-text-logo {
+#site-text-logo {
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODkiIGhlaWdodD0iMjciIHZpZXdCb3g9IjAgMCA4OSAyNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGlkPSJmaXZlcnJfbG9nb193aGl0ZSIgZmlsbD0iI2ZmZiI+CiAgICAgICAgPHBhdGggZD0ibTgxLjYgMTMuMWgtMy4xYy0yIDAtMy4xIDEuNS0zLjEgNC4xdjkuM2gtNnYtMTMuNGgtMi41Yy0yIDAtMy4xIDEuNS0zLjEgNC4xdjkuM2gtNnYtMTguNGg2djIuOGMxLTIuMiAyLjMtMi44IDQuMy0yLjhoNy4zdjIuOGMxLTIuMiAyLjMtMi44IDQuMy0yLjhoMnptLTI1LjIgNS42aC0xMi40Yy4zIDIuMSAxLjYgMy4yIDMuNyAzLjIgMS42IDAgMi43LS43IDMuMS0xLjhsNS4zIDEuNWMtMS4zIDMuMi00LjUgNS4xLTguNCA1LjEtNi41IDAtOS41LTUuMS05LjUtOS41IDAtNC4zIDIuNi05LjQgOS4xLTkuNCA2LjkgMCA5LjIgNS4yIDkuMiA5LjEgMCAuOSAwIDEuNC0uMSAxLjh6bS01LjctMy41Yy0uMS0xLjYtMS4zLTMtMy4zLTMtMS45IDAtMyAuOC0zLjQgM3ptLTIyLjkgMTEuM2g1LjJsNi42LTE4LjNoLTZsLTMuMiAxMC43LTMuMi0xMC44aC02em0tMjQuNCAwaDUuOXYtMTMuNGg1Ljd2MTMuNGg1Ljl2LTE4LjRoLTExLjZ2LTEuMWMwLTEuMi45LTIgMi4yLTJoMy41di01aC00LjRjLTQuMyAwLTcuMiAyLjctNy4yIDYuNnYxLjVoLTMuNHY1aDMuNHoiLz4KICAgIDwvZz4KICAgIDxnIGlkPSJmaXZlcnJfbG9nb193aGl0ZV9kb3QiIGZpbGw9IiMxZGJmNzMiPgogICAgICAgIDxwYXRoIGQ9Im04NS4zIDI3YzIgMCAzLjctMS43IDMuNy0zLjdzLTEuNy0zLjctMy43LTMuNy0zLjcgMS43LTMuNyAzLjcgMS43IDMuNyAzLjcgMy43eiIvPgogICAgPC9nPgo8L3N2Zz4K") no-repeat;
+    background-size: 89px 27px;
+    width: 89px;
+    height: 27px;
+    text-indent: -2000px;
+    margin: 0;
+}
+
+.ficon {
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -120,14 +129,14 @@ font-display:auto;font-style:normal;font-weight:400;
     line-height: 1
 }
 
-.ficon:before, #site-text-logo:before {
+.ficon:before {
     font-family: 'FiverrGlyphs' !important;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
 
-.ficon.ficon-white, #site-text-logo {
+.ficon.ficon-white {
     color: #fff
 }
 
@@ -171,7 +180,7 @@ font-display:auto;font-style:normal;font-weight:400;
     content: "\e908"
 }
 
-.ficon-fiverr-logo:before, #site-text-logo:before {
+.ficon-fiverr-logo:before {
     content: "\e909"
 }
 
@@ -367,20 +376,6 @@ font-display:auto;font-style:normal;font-weight:400;
     background-color: #1f1f1f;
 }
 
-#site-text-logo {
-    visibility: hidden;
-    margin-right: 10px;
-    height: 40px;
-    /* a bit hacky */
-    overflow: hidden;
-}
-
-#site-text-logo:before {
-    visibility: visible;
-    font-size: 88px;
-    line-height: 32px
-}
-
 .d-header .btn-primary {
     background: transparent;
 }
@@ -489,7 +484,7 @@ th,
 
 
 /* =============== Crunchify Header Menu CSS ================= */
- 
+
 // Hide header menu on some devices
 @media screen and (max-width: 480px) {
     .crunchify-container {
@@ -498,14 +493,14 @@ th,
 }
 
 @media screen and (min-width: 1140px) {
-  div#crunchify-navbar.crunchify-container { 
+  div#crunchify-navbar.crunchify-container {
       left: calc(315px + 50%);
   }
 }
- 
+
 
 @media screen and (max-width: 1140px) {
-   div#crunchify-navbar.crunchify-container { 
+   div#crunchify-navbar.crunchify-container {
       right: 140px;
    }
 }
@@ -551,5 +546,5 @@ th,
 }
 
 h3.user-card-public-field {
- clear: both;   
+ clear: both;
 }
